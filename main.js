@@ -49,3 +49,26 @@ function tribonacci(signature,n){
     return newSequence
 }
   }
+
+
+// Remove the minimum - 7kyu
+
+/*
+
+Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with a lower index. If you get an empty array/list, return an empty array/list.
+
+Don't change the order of the elements that are left.
+
+*/
+
+
+  function removeSmallest(numbers) {
+    const newArray = Array.from(numbers)
+    const outputArray = Array.from(numbers)
+    
+    newArray.sort((a,b) => a - b)
+    const lowestNumberPosition = outputArray.indexOf(newArray[0])
+    outputArray.splice(lowestNumberPosition, 1)
+    return outputArray
+    
+  };
