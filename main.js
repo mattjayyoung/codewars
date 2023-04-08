@@ -193,3 +193,18 @@ function solution(start, finish) {
   }
   return jumpCount
 }
+
+// Anagram Detection - 7kyu (Apr 8th)
+
+/*
+
+Complete the function to return true if the two arguments given are anagrams of each other; return false otherwise.
+
+*/
+
+function isAnagram(test, original) {
+  const sortedTest = test.toLowerCase().split('').sort().join()
+  const sortedOriginal = original.toLowerCase().split('').sort().join()
+return sortedTest === sortedOriginal ? true : false
+};
+
