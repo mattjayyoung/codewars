@@ -21,7 +21,7 @@ declare score and initialize
  return score
  */
 
-const result = array1.reduce((score, answer, index, array)=>{
+ let result = array1.reduce((score, answer, index)=>{
     return score + (array2[index] === "" ? 0 : answer === array2[index] ? 4 : answer 
     !== array2[index] ? -1 : "")
 },0)
