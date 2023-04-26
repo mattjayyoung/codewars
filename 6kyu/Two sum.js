@@ -7,9 +7,9 @@ function twoSum(numbers, target) {
   
   let sumOfIndices = []
   
-  for (let i = 0; i < numbers.length - 2; i++){
+  for (let i = 0; i <= numbers.length - 2; i++){
     for (let j = 1; j < numbers.length; j++){
-      if (numbers[i] + numbers[j] === target){
+      if (numbers[i] + numbers[j] === target && i !== j){
         sumOfIndices.push(i)
         sumOfIndices.push(j)
         return sumOfIndices
