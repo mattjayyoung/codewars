@@ -12,6 +12,6 @@ for (let i = 3; i < 3000; i++){
     return ([fibo[i - 1],fibo[i], true])
   } else if (fibo[i] * fibo[i - 1] > prod){
     return([fibo[i - 1], fibo[i], false])
-  }
+  } 
 }
 }
