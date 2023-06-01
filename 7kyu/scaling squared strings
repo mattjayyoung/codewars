@@ -1,0 +1,25 @@
+function scale(strng, k, n) {
+    let str = strng.split('\n')
+    let height = ""
+    let double = ""
+    
+    for (let i = 0; i < str.length; i++){
+        height += str[i].repeat(n)   
+    }
+
+    for (let j = 0; j < height.length; j++){
+        double += height[j].repeat(k)
+    }
+
+    for (let k = 0; k < double.length; k++){
+        
+    }
+    
+  
+
+}
+
+//
+
+let a = "abcd\nefgh\nijkl\nmnop"
+scale(a, 2, 3)
