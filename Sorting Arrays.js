@@ -1,3 +1,5 @@
+//Sorting Arrays - 7kyu (June 10th)
+
 function sortArray(a1, a2) {
     let firstInitialArray = a1.map(el => el[0])
     let sortedArray = []
