@@ -9,9 +9,7 @@ let uniqueNums = []
       uniqueNums.unshift(item)
     }
   })
-
 return uniqueNums
-  
 }
 
 
