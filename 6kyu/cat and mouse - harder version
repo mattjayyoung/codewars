@@ -1,0 +1,36 @@
+// Cat and Mouse - Harder Version - 6kyu (July 14th)
+
+function catMouse(x, j){
+    console.log(`the board: ${x}`)
+    console.log(`jump = ${j}`)
+    
+    let catPosition = x.indexOf('C')
+    let mousePosition = x.indexOf('m')
+    let dogPosition = x.indexOf('D')
+    console.log(catPosition)
+    console.log(mousePosition)
+    console.log(dogPosition)
+    
+
+    if (catPosition === -1 || mousePosition === -1 || dogPosition === -1){
+        return 'boring without all three'
+    }
+
+    if (Math.abs(catPosition - mousePosition) <= j){
+        if (dogPosition > catPosition && dogPosition < mousePosition || dogPosition < catPosition && dogPosition > mousePosition){
+            return 'Protected!'
+        } else {
+            return 'Caught!'
+        }
+    } else {
+        return 'Escaped!'
+    }
+}
+
+
+catMouse('..D.....Cm', 13) // "Caught!"
+catMouse('............C.............D..m...', 8) // "Escaped!"
+catMouse('m.C...', 5) // "boring without all three"
+
+
+catMouse('.D..C....m.................', 4) // 'Escaped!'
