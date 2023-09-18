@@ -1,0 +1,26 @@
+// Sum of numbers from 0 to N - 7kyu (September 18th)
+
+var SequenceSum = (function() {
+  function SequenceSum() {}
+  let string = ""
+
+  SequenceSum.showSequence = function(count) {
+  let string = ""  
+  let sum = 0
+
+  if (!count) {
+    return '0=0'
+  } else if (count < 0){
+    return `${count.toString()}<0`
+  } else {
+  for (let i = 0; i < count; i++){
+      string += `${i.toString()}+`
+      sum += i
+    }
+    }
+    return `${string}${count.toString()} = ${sum + count}`
+}
+
+  return SequenceSum;
+
+})();
