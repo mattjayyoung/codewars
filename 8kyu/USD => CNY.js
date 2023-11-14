@@ -1,0 +1,5 @@
+// USD => CNY (8kyu) - November 14th
+
+function usdcny(usd) {
+  return `${(usd * 6.75).toFixed(2)} Chinese Yuan`
+}
